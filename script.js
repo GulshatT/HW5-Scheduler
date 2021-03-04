@@ -11,6 +11,8 @@ $('#currentDay').text(moment().format('MMMM Do YYYY, h:mm:ss a'));
 //jquery traversing .parent() .sibling()
 //setItems in localStorage  /unit 04
 
+   // add a data - hour attribure to the timeblock
+
 
 // save to local storage
 //handle color coding
