@@ -87,9 +87,9 @@ textarea:hover {
   transition: all .3s ease-in-out; 
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 500px) {
   body {
-      min-width: 40rem;
+      min-width: 20rem;
   }
 }
 
