@@ -1,3 +1,8 @@
+window.onload = function(){
+    colorCode();
+}
+
+
 $('#currentDay').text(moment().format('MMMM Do YYYY, h:mm:ss a'));
 
 //button 
@@ -20,6 +25,15 @@ $('#currentDay').text(moment().format('MMMM Do YYYY, h:mm:ss a'));
 
 // get a reference tp all timeblocks 
 //loop throught the timeblocks
+var now = new Date().getHours();
+function colorCode() {
+    if (now > 8) {
+        $('#8am').addClass('past');
+    } else if (now >= 8 && now < 9) {
+        $('#8am').addClass('present');
+    } else if (now < 8) {
+        $('#8am').addClass('future');
+    }
 
 // get the data-hour value timeblock [i].data('hour')
 //if , else - condition we compare thr currentHOur wuth the timeBLock <, ===,
