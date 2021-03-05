@@ -1,9 +1,11 @@
-window.onload = function(){
-    colorCode();
-}
-
-
+// current day -> top calendar
 $('#currentDay').text(moment().format('MMMM Do YYYY, h:mm:ss a'));
+
+//window.onload = function(){
+    //colorCode();
+//}
+
+// current day -> top calendar
 
 //button 
 // get a reference to all of the save buttons $('.saveBtn')
@@ -25,15 +27,18 @@ $('#currentDay').text(moment().format('MMMM Do YYYY, h:mm:ss a'));
 
 // get a reference tp all timeblocks 
 //loop throught the timeblocks
-var now = new Date().getHours();
-function colorCode() {
-    if (now > 8) {
-        $('#8am').addClass('past');
-    } else if (now >= 8 && now < 9) {
-        $('#8am').addClass('present');
-    } else if (now < 8) {
-        $('#8am').addClass('future');
-    }
+
+// call the colorCoding function
+//var now = new Date().getHours();
+//function colorCode() {
+
+    //if (now > 8) {
+      //  $('#8am').addClass('past');
+    //} else if (now >= 8 && now < 9) {
+     //   $('#8am').addClass('present');
+   // } else if (now < 8) {
+    //    $('#8am').addClass('future');
+   // }
 
 // get the data-hour value timeblock [i].data('hour')
 //if , else - condition we compare thr currentHOur wuth the timeBLock <, ===,
@@ -46,7 +51,7 @@ function colorCode() {
 //.val()
 //approach $(textarea;) ->loop (parent)-> val()
 
-// current day -> top calendar
-// call the colorCoding function
+
+
 // setInterval -> 15000
 // unit4
