@@ -89,7 +89,7 @@ textarea:hover {
 
 @media screen and (max-width: 500px) {
   body {
-      min-width: 20rem;
+      min-width: 10rem;
   }
 }
 
