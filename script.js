@@ -83,13 +83,14 @@
 //button 
 // get a reference to all of the save buttons $('.saveBtn')
 // add a click handler to each save Button using .on() method
-$('.saveBtn').on('click', handleSave)
-function handleSave (event) {
+$('.saveBtn').on('click', function() {
   console.log('Saved')
   var value = $(this).siblings('.textarea').val(); //.textarea
+  console.log(this)
   var key = $(this).siblings('.textarea').attr('id'); //textarea
   localStorage.setItem(key,value);
-}
+})
+
 
 
 // traverse the DOM to get the values that we need to store to the localStorage
